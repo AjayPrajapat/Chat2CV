@@ -12,22 +12,33 @@
       "resizeMode": "contain",
       "backgroundColor": "#1A73E8"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.chattocvbuilder"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#1A73E8"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.anonymous.chattocvbuilder"
     },
     "web": {
       "bundler": "metro",
       "output": "single",
       "favicon": "./assets/favicon.png"
     },
-    "plugins": ["expo-localization", "expo-document-picker", "expo-image-picker"],
+    "plugins": [
+      "expo-localization",
+      "expo-document-picker",
+      "expo-image-picker"
+    ],
     "extra": {
       "eas": {
         "projectId": "00000000-0000-0000-0000-000000000000"
